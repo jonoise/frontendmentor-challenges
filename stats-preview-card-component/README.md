@@ -8,6 +8,8 @@ This is a solution to the [Stats preview card component challenge on Frontend Me
 
 ### Screenshot
 
+![Stats preview card](https://user-images.githubusercontent.com/71573508/119581847-a1073600-bd80-11eb-805f-e5a785f68709.PNG)
+
 ### Built with
 
 - HTML5
