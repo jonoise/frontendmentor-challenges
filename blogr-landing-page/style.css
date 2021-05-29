@@ -1,0 +1,423 @@
+/*Overpass*/
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&display=swap');
+/*Ubuntu*/
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+
+:root {
+    --cta-text: hsl(356, 100%, 66%);
+    --cta-hover: hsl(355, 100%, 74%);
+    --heading: hsl(208, 49%, 24%);
+    --white: hsl(0, 0%, 100%);
+    --footer-text: hsl(240, 2%, 79%);
+    --body-copy: hsl(207, 13%, 34%);
+    --footer-bg: hsl(240, 10%, 16%);
+    --bg-gradient-mobile: hsl(13, 100%, 72%);
+    --bg-gradient2-mobile: #ff3d54;
+    --bg-gradient-body: hsl(237, 17%, 21%);
+    --bg-gradient2-body: hsl(237, 23%, 32%);
+    --overpass: "Overpass", 'sans-serif';
+    --ubuntu: "Ubuntu", 'sans-serif';
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+/******* START NAVBAR *******/
+
+.navbar {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    background-color: transparent;
+    position: absolute;
+    height: 80px;
+    padding-top: 20px;
+}
+
+.navbar-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 50px;
+    height: 80px;
+    width: 80%;
+}
+
+.menu-icon {
+    display: none;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+}
+
+.menus {
+    display: flex;
+}
+
+.dropdown-content {
+    display: none;
+}
+
+.logo {
+    margin-right: 50px;
+}
+
+.dropdown-header {
+    margin-right: 50px;
+    margin-bottom: 10px;
+    border: none;
+    border-bottom: 1px solid transparent;
+    background: none;
+    font-family: var(--ubuntu);
+    cursor: pointer;
+    color: var(--white)
+}
+
+.dropdown-header img {
+    margin-left: 6px;
+}
+
+.dropdown-header:hover {
+    border-bottom: 1px solid beige;
+}
+
+
+.dropdown-menu:hover .dropdown-content {
+    background-color: var(--white);
+    width: 110px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    padding: 20px;
+    font-family: var(--ubuntu);
+}
+
+.dropdown-content a {
+    text-decoration: none;
+    color: black;
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+.dropdown-content a:hover {
+    font-weight: 600;
+}
+
+
+/******* END NAVBAR *******/
+
+
+
+
+/******* START HERO *******/
+.hero-bg {
+    background-image: linear-gradient(90deg, rgba(255, 143, 112, 1) 0%, rgba(255, 61, 84, 1) 100%);
+    border-bottom-left-radius: 100px;
+}
+
+.hero-img {
+    background-image: url(images/bg-pattern-intro.svg);
+    background-size: 2500px;
+    background-position: -300px -1100px;
+}
+
+.hero {
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--overpass);
+    color: var(--white);
+}
+
+.hero__title {
+    margin: 10px 0;
+    font-size: 55px;
+}
+
+.hero__description {
+    margin: 10px 0;
+}
+
+.hero__btns {
+    margin: 10px 0;
+}
+
+/******* -------- *******/
+/******* END HERO *******/
+/******* -------- *******/
+
+
+/******* START INTRO *******/
+
+.intro {
+    display: flex;
+    justify-content: center;
+    padding: 100px 0;
+    font-family: var(--overpass);
+}
+
+.intro-container {
+    width: 80%;
+    padding: 0 20px
+}
+
+.intro__title {
+    text-align: center;
+    margin-bottom: 4rem;
+    font-size: 25px;
+    color: var(--heading)
+}
+
+.intro__body {
+    display: flex;
+}
+
+.intro-text h1 {
+    color: var(--heading);
+    margin-bottom: 1rem;
+}
+
+.intro-text p {
+    color: var(--body-copy);
+    line-height: 1.4rem;
+    font-size: 12px;
+    margin-bottom: 1rem;
+}
+
+.intro-left {
+    width: 50%;
+}
+
+.intro-right {
+    width: 50%;
+}
+
+.intro-img {
+    width: 100%;
+    padding-left: 140px;
+}
+
+.intro-img img {
+    width: 40%;
+    top: 500px;
+    position: absolute;
+}
+
+/******* --------- *******/
+/******* END INTRO *******/
+/******* --------- *******/
+
+/* UTILITIES */
+
+.btn {
+    padding: 10px 30px;
+    border-radius: 50px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+.btn-primary {
+    background-color: var(--white);
+    color: var(--cta-text);
+    transition: all 0.2s ease-out;
+}
+
+.btn-primary:hover {
+    color: hsl(0, 0%, 100%);
+    background-color: hsla(0, 0%, 100%, 0.171);
+}
+
+.btn-secondary {
+    color: hsl(0, 0%, 100%);
+    transition: all 0.2s ease-out;
+}
+
+.btn-secondary:hover {
+    background-color: hsla(0, 0%, 100%, 0.301);
+}
+
+.btn-outline {
+    border: 1px solid var(--white);
+    color: hsl(0, 0%, 100%);
+    transition: all 0.2s ease-out;
+}
+
+.btn-outline:hover {
+    color: var(--cta-text);
+    background-color: var(--white);
+}
+
+@media screen and (max-width: 1080px) {
+
+
+    /******* START NAVBAR *******/
+
+
+    .navbar-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 20px;
+        height: 80px;
+        width: 100%;
+    }
+
+    .menu-icon {
+        cursor: pointer;
+        display: block;
+    }
+
+    .inactive-icon {
+        display: none;
+    }
+
+    .pp {
+        color: var(--heading);
+        font-weight: 300;
+    }
+
+
+    .menus {
+        display: none;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        border-radius: 8px;
+        top: 80px;
+        position: absolute;
+        background-color: transparent;
+        width: 90%;
+        height: 80vh;
+        transition: all 1s ease-out;
+    }
+
+    .menus.active {
+        display: flex;
+        background-color: white;
+        box-shadow: 3px 8px 32px 3px rgba(0, 0, 0, 0.36);
+        transition: all 1s ease-out;
+    }
+
+    .nav-right {
+        display: none;
+
+    }
+
+    .dropdown-content {
+        display: none;
+    }
+
+    .logo {
+        margin-right: 50px;
+    }
+
+    .dropdown-header {
+        margin-right: 50px;
+        margin-bottom: 10px;
+        border: none;
+        border-bottom: 1px solid transparent;
+        background: none;
+        font-family: var(--ubuntu);
+        cursor: pointer;
+        color: var(--white)
+    }
+
+    .dropdown-header img {
+        margin-left: 6px;
+    }
+
+    .dropdown-header:hover {
+        border-bottom: 1px solid beige;
+    }
+
+
+    .dropdown-menu:hover .dropdown-content {
+        background-color: var(--white);
+        width: 110px;
+        border-radius: 4px;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        padding: 20px;
+        font-family: var(--ubuntu);
+    }
+
+    .dropdown-content a {
+        text-decoration: none;
+        color: black;
+        margin-top: 10px;
+        font-size: 12px;
+    }
+
+    .dropdown-content a:hover {
+        font-weight: 600;
+    }
+
+
+    /******* END NAVBAR *******/
+
+
+
+
+
+    /******* START HERO *******/
+    .hero {
+        min-height: 90vh;
+        padding: 0 20px
+    }
+
+    .hero__title {
+        text-align: center;
+        margin: 10px 0;
+        font-size: 50px;
+    }
+
+    .hero__description {
+        font-size: 25px;
+        text-align: center;
+        margin: 40px 0;
+    }
+
+    .hero__btns {
+        margin: 40px 0;
+    }
+
+    /******* -------- *******/
+    /******* END HERO *******/
+    /******* -------- *******/
+
+    .btn {
+        font-weight: 600;
+    }
+
+    .intro {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .hero__title {
+        text-align: center;
+        margin: 10px 0;
+        font-size: 1.7rem;
+    }
+}
