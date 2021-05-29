@@ -4,6 +4,9 @@
 
 Thanks for checking out this front-end coding challenge.
 
+## Screenshot
+![faq](https://user-images.githubusercontent.com/71573508/120059591-c362b300-c00f-11eb-9365-52a708014699.PNG)
+
 ## The challenge
 
 The challenge is to build out a FAQ accordion card and get it looking as close to the design as possible.
