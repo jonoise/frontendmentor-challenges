@@ -4,6 +4,10 @@ This is a solution to the [Blogr landing page challenge on Frontend Mentor](http
 
 ## Overview
 
+### Screenshot
+![blogr](https://user-images.githubusercontent.com/71573508/120054074-06f6f600-bfeb-11eb-943c-7e3e368d69a9.PNG)
+
+
 ### The challenge
 
 Users should be able to:
