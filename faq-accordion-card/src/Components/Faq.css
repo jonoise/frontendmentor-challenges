@@ -1,0 +1,30 @@
+.faq {
+    margin: 40px 0;
+}
+
+.q-title {
+    color: hsl(238, 29%, 16%);
+    cursor: pointer
+}
+
+.q-title:hover {
+    color: hsl(14, 88%, 65%)
+}
+
+header {
+    display: flex;
+}
+
+.answer {
+    color: hsl(237, 12%, 33%);
+    font-weight: 300;
+}
+
+.btn {
+    border: none;
+    background-color: none;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-left: 0.7rem;
+    color: hsl(14, 88%, 65%)
+}
