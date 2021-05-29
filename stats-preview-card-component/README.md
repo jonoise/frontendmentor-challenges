@@ -15,10 +15,6 @@ This is a solution to the [Stats preview card component challenge on Frontend Me
 - CSS Variables
 - Flexbox
 
-### Continued development
-
-This specific design is not responsive. I made it in 15 minutes as part of a personal challenge. In that timeframe I was unable to complete it adding media queries. It was a fun project to work with and very useful to continue working my HTML and CSS skills.
-
 ## Author
 
 - Website - [Amilkar Munoz](https://amilkar.dev)
