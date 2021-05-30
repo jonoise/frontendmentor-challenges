@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    width: 100%
+}
+
+/* UTILITIES */
+.container {
+    width: 85%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+
+
+/* NAV */
+
+.menu-icon {
+    display: none;
+}
+
+header {
+    position: absolute;
+    display: flex;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+}
+
+nav {
+    height: 8rem;
+    display: flex;
+    align-items: center;
+    font-family: "Montserrat";
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    color: white;
+}
+
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+nav li {
+    list-style: none;
+    margin-left: 20px;
+}
+
+.logo {
+    display: flex;
+    font-size: 2rem;
+}
+
+.logo-title {
+    margin-left: 1rem;
+    white-space: nowrap;
+}
+
+.nav-items {
+    display: flex;
+}
+
+
+/* HERO */
+
+.hero {
+    width: 100%;
+    min-height: 90vh;
+    background-image: linear-gradient(to bottom right, #3B4679, #1a2357);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    height: 90%;
+    color: white;
+    font-family: "Ubuntu";
+}
+
+
+.left,
+.right {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    width: 50%;
+    height: 50%;
+}
+
+.right {
+    padding: 100px;
+}
+
+.left .title,
+.description,
+form,
+.small-title {
+    margin: 1rem 0;
+}
+
+.left .title {
+    font-size: 6rem;
+}
+
+/* FORM */
+
+input[type="text"],
+input[type="button"] {
+    padding: 0.7rem 1rem;
+    outline: none;
+    border: none;
+    border-radius: 50px;
+}
+
+input[type="text"] {
+    width: 60%;
+}
+
+input[type="button"] {
+    font-weight: 600;
+    color: white;
+    background-image: linear-gradient(to right, #443f8f, #5ee4a5);
+    margin: -9rem;
+    cursor: pointer;
+}
+
+
+/* PLATFORMS */
+
+.platforms a {
+    color: white;
+    text-decoration: none;
+    font-size: 5rem;
+    margin-right: 2rem;
+    transition: all 0.5s ease-out;
+}
+
+.fa-spotify:hover {
+    color: #23CB5D;
+    transition: 0.5s ease-out;
+}
+
+.fa-youtube:hover {
+    color: #FF0000;
+    transition: 0.5s ease-out;
+}
+
+.fa-soundcloud:hover {
+    color: #F85901;
+    transition: 0.5s ease-out;
+}
+
+/* TOPICS */
+
+.topics {
+    min-height: 60vh;
+    width: 100%;
+    background-color: cornsilk;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.topic-title {
+    text-align: center;
+    font-size: 4rem;
+    font-family: "Ubuntu";
+    color: rgb(44, 44, 94);
+}
+
+.topic {
+    background-color: #23cb5e93;
+    color: rgb(44, 44, 94);
+    padding: 2rem;
+    margin: 2rem;
+    border-radius: 9px;
+    width: 33.33%;
+    text-align: center;
+}
+
+.topic .header i {
+    font-size: 5rem;
+    margin: 1rem 0;
+    color: #443764
+}
+
+.topic .footer p {
+    font-size: 2rem;
+}
+
+
+@media screen and (max-width: 1024px) {
+
+
+    .inactive-icon {
+        display: none;
+    }
+
+    .content {
+        flex-direction: column-reverse;
+    }
+
+    .left,
+    .right {
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        margin: 2rem;
+    }
+
+    .right {
+        padding: 50px
+    }
+
+    .content-img {
+        padding-top: 60px
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    nav {
+        padding: 0 1.5rem
+    }
+
+    .content {
+        padding: 0 1.5rem
+    }
+
+    .left .title {
+        font-size: 3rem;
+    }
+
+    input[type="text"] {
+        width: 100%;
+    }
+
+    input[type="button"] {
+        margin: 1rem 0;
+    }
+
+    .platforms a {
+        font-size: 3rem;
+    }
+
+    .nav-items {
+        position: absolute;
+        display: block;
+        text-align: center;
+        width: 100%;
+        height: 100vh;
+        padding: 0% 2rem;
+        top: 8rem;
+        left: -100%;
+        transition: all 0.3s ease-out;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .item {
+        padding: 2rem;
+        margin: 0%;
+    }
+
+    .nav-items.active {
+
+        top: 8rem;
+        left: 0;
+        background-color: #3B4679;
+        transition: all 0.3s ease-out;
+    }
+
+    .menu-icon {
+        display: block;
+        font-size: 3rem;
+    }
+
+    .right {
+        padding: 0
+    }
+
+    /* TOPICS */
+
+    .topic {
+        width: 100%;
+        margin: 2rem 0;
+    }
+}
