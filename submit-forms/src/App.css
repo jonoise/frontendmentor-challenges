@@ -31,6 +31,10 @@ a {
   text-decoration: none;
 }
 
+Link {
+  text-decoration: none;
+}
+
 li {
   list-style: none;
 }
