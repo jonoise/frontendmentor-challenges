@@ -23,13 +23,19 @@ function Navbar() {
 
         <ul className={click ? "nav-items active" : "nav-items"}>
           <li className="nav-item">
-            <Link className="nav-link">Forms</Link>
+            <Link to="/forms" className="nav-link">
+              Forms
+            </Link>
           </li>
           <li className="nav-item">
-            <Link className="nav-link">Design</Link>
+            <Link to="/design" className="nav-link">
+              Design
+            </Link>
           </li>
           <li className="nav-item">
-            <Link className="nav-link">Know+</Link>
+            <Link to="/know-me" className="nav-link">
+              Know+
+            </Link>
           </li>
         </ul>
       </div>

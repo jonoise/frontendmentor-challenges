@@ -2,6 +2,7 @@ import React from "react";
 import Card from "./Card";
 import card_data from "./card_data";
 import "./Cards.css";
+import { Link } from "react-router-dom";
 
 function Cards() {
   const cardDistribution = (data, side) => {
@@ -25,7 +26,7 @@ function Cards() {
         </div>
         <div className="cards__explore-more">
           <h5>
-            <a href="">Explore this component.</a>{" "}
+            <Link to="/component/1">Explore this component.</Link>
           </h5>
         </div>
       </div>

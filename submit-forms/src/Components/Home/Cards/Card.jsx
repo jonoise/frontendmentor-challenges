@@ -1,7 +1,7 @@
 import React from "react";
 
 export default function Card({ data }) {
-  const { id, title, text, color, emoji } = data;
+  const { title, text, color, emoji } = data;
   return (
     <div className="card_component" style={{ backgroundColor: color }}>
       <div className="card__left">
