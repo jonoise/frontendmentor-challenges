@@ -1,0 +1,142 @@
+.home {
+    background-color: var(--main-color);
+    color: var(--white);
+    position: relative;
+    width: 100%;
+    min-height: 110vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home__content {
+    display: flex;
+    z-index: 2;
+
+}
+
+.home__left-box,
+.home__right-box {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+    margin: 0 6rem;
+}
+
+.home__right-box {
+    padding-bottom: 6rem;
+}
+
+
+.pseudo-title {
+    color: var(--whiite-transparent);
+    font-size: 3rem;
+}
+
+.head-title {
+    font-size: 5.5rem;
+    color: var(--dark-color);
+}
+
+.body-text {
+    color: var(--white);
+    font-size: 2rem;
+}
+
+.formatted {
+    color: var(--sec-alt-color)
+}
+
+.second-btn {
+    margin-left: 2rem;
+}
+
+.animation-box {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.lottie-1 {
+    width: 100%;
+}
+
+
+.clouds {
+    position: absolute;
+    width: 100%;
+    bottom: -3rem;
+}
+
+@media screen and (max-width: 1025px) {
+
+    .home__content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .home__left-box,
+    .home__right-box {
+        width: 100%;
+    }
+
+
+    .lottie-1 {
+        width: 50%;
+    }
+
+    .lottie-text {
+        font-size: 3rem;
+    }
+
+    .clouds {
+        bottom: 0%;
+    }
+}
+
+@media screen and (max-width: 769px) {
+    .head-title {
+        font-size: 4rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .home__left-box {
+        margin-top: 15rem;
+    }
+
+    .pseudo-title {
+        font-size: 1.4rem;
+    }
+
+    .head-title {
+        font-size: 3rem;
+    }
+
+    .body-text {
+        font-size: 1.6rem;
+    }
+
+    .cta-box {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .second-btn {
+        margin-top: 2rem;
+        margin-left: 0;
+    }
+
+    .lottie-1 {
+        width: 100%;
+    }
+
+    .lottie-text {
+        font-size: 1.5rem;
+    }
+}

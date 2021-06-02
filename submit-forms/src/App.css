@@ -1,0 +1,135 @@
+/* INTER FONT */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+  --main-color: #3b81f7;
+  --main-color-hover: #6ba1ff;
+  --sec-color: #f23557;
+  --dark-color: #011c38;
+  --alt-color: #775ada;
+  --sec-alt-color: #21e6c1;
+  --white: rgba(255, 255, 255, 0.829);
+  --white-transparent: rgba(255, 255, 255, 0.575);
+}
+
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Inter", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+}
+
+/* UTILITIES */
+
+.mb-2 {
+  margin-bottom: 2rem;
+}
+
+.mb-3 {
+  margin-bottom: 3rem;
+}
+
+.mb-4 {
+  margin-bottom: 4rem;
+}
+
+.ml-2 {
+  margin-left: 2rem;
+}
+
+.ml-3 {
+  margin-left: 3rem;
+}
+
+.ml-4 {
+  margin-left: 4rem;
+}
+
+.container {
+  width: 85%
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* BTNS */
+
+.btn {
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  padding: 1.5rem 3.5rem;
+  cursor: pointer;
+  font-weight: 900;
+  font-size: 1.7rem;
+  transition: 0.3s ease-out;
+}
+
+.btn-primary {
+  background-color: var(--main-color);
+  color: var(--white)
+}
+
+.btn-primary:hover {
+  background-color: var(--sec-color);
+  color: var(--white-hover)
+}
+
+/* SECONDARY BTN */
+.btn-secondary {
+  background-color: var(--sec-color);
+  color: var(--white)
+}
+
+.btn-secondary:hover {
+  border: 1px solid var(--main-color);
+  background-color: var(--white);
+  color: var(--main-color)
+}
+
+/* OUTLINE BTN */
+.btn-outline {
+  border: 1px solid var(--white);
+  color: var(--white);
+}
+
+.btn-outline:hover {
+  border: 1px solid var(--white);
+  background-color: var(--white);
+  color: var(--main-color);
+}
