@@ -1,0 +1,29 @@
+.footer__component {
+    background-color: var(--dark-color);
+    min-height: 30vh;
+    color: var(--white)
+}
+
+.footer__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-item {
+    padding: 1rem 0;
+    margin: 0.5rem 0;
+}
+
+.footer-link {
+    color: var(--white);
+}
+
+.footer-link:hover {
+    color: var(--white-transparent)
+}
+
+.footer__flag {
+    width: 2rem;
+}
