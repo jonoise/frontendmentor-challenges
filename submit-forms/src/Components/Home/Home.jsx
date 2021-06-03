@@ -1,6 +1,6 @@
 import React from "react";
 import Cards from "./Cards/Cards";
-import Hero from "./Hero";
+import Hero from "./Hero/Hero";
 import "./Home.css";
 
 function Home() {

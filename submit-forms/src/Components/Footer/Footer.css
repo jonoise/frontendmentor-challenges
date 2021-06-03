@@ -1,5 +1,5 @@
 .footer__component {
-    background-color: var(--dark-color);
+    background-color: var(--dark-bg-color);
     min-height: 30vh;
     color: var(--white)
 }

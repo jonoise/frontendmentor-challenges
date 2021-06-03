@@ -6,6 +6,7 @@
   --main-color-hover: #6ba1ff;
   --sec-color: #f23557;
   --dark-color: #011c38;
+  --dark-bg-color: #111b25;
   --alt-color: #775ada;
   --sec-alt-color: #21e6c1;
   --white: rgba(255, 255, 255, 0.829);
@@ -69,8 +70,14 @@ img {
   margin-left: 4rem;
 }
 
+/* ELEMENTS */
+
 .container {
   width: 85%
+}
+
+.form-container {
+  width: 85%;
 }
 
 .flex {
@@ -111,7 +118,7 @@ img {
 
 .btn-primary:hover {
   background-color: var(--sec-color);
-  color: var(--white-hover)
+  color: var(--white-transparent)
 }
 
 /* SECONDARY BTN */
@@ -136,4 +143,10 @@ img {
   border: 1px solid var(--white);
   background-color: var(--white);
   color: var(--main-color);
+}
+
+@media screen and (max-width: 786px) {
+  .form-container {
+    width: 100%;
+  }
 }
