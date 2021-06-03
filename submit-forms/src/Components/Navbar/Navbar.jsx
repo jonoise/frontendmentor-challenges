@@ -13,15 +13,22 @@ function Navbar() {
   return (
     <header className="navbar flex">
       <div className="nav-container flex space-between">
-        <div className="logo-container">
-          <img src="./images/nav-logo.svg" alt="" />
-        </div>
+        <Link to="/">
+          <div className="logo-container">
+            <img src="./images/nav-logo.svg" alt="" />
+          </div>
+        </Link>
 
         <div onClick={handleClick} className="nav-icon">
           {click ? <FaTimes /> : <FaBars />}
         </div>
 
         <ul className={click ? "nav-items active" : "nav-items"}>
+          <li className="nav-item">
+            <Link to="/" className="nav-link">
+              Home
+            </Link>
+          </li>
           <li className="nav-item">
             <Link to="/forms" className="nav-link">
               Forms
