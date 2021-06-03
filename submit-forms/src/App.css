@@ -101,7 +101,6 @@ img {
 /* BTNS */
 
 .btn {
-  background-color: transparent;
   border: 1px solid transparent;
   border-radius: 8px;
   padding: 1.5rem 3.5rem;
@@ -135,6 +134,7 @@ img {
 
 /* OUTLINE BTN */
 .btn-outline {
+  background-color: transparent;
   border: 1px solid var(--white);
   color: var(--white);
 }
@@ -147,6 +147,10 @@ img {
 
 @media screen and (max-width: 786px) {
   .form-container {
+    width: 100%;
+  }
+
+  .btn {
     width: 100%;
   }
 }

@@ -63,6 +63,8 @@
 
 .btn-form1 {
     margin-top: 2rem;
+    background-color: var(--main-color);
+    color: var(--white)
 }
 
 /* FORM INFO */

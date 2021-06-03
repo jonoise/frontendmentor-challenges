@@ -52,7 +52,7 @@ function F1({ validator, message, handleFormSubmit, handleInputChange }) {
               placeholder="Message"
               required={true}
             ></textarea>
-            <button className="btn btn-form1 btn-primary" type="submit">
+            <button className="btn btn-form1" type="submit">
               Submit
             </button>
           </form>
