@@ -5,6 +5,10 @@
     z-index: 999;
 }
 
+.navbar.bg-color {
+    background-color: var(--dark-bg);
+}
+
 .nav-container {
     width: 85%;
 }

@@ -4,8 +4,8 @@ import PostsCards from "./Posts/PostsCards";
 // import PostFilter from "./PostFilter/PostFilter";
 
 function Blog() {
-  // const url = "http://localhost:8000/api/posts/";
-  const url = "https://secret-scrubland-96747.herokuapp.com/api/posts/";
+  const url = "http://localhost:8000/api/posts/";
+  // const url = "https://secret-scrubland-96747.herokuapp.com/api/posts/";
 
   // const [allPosts, setAllPosts] = useState([]);
   const [featPosts, setFeatPosts] = useState([]);

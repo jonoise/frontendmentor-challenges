@@ -1,0 +1,61 @@
+.footer {
+    color: white;
+    min-height: 15vh;
+    background-color: var(--dark-bg);
+    /* background-color: var(--yellow); */
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 2rem;
+}
+
+.footer-nav-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-made-by {
+    margin: 2rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.footer-tech img {
+    padding-top: .5rem;
+    width: 5rem;
+    height: 100%;
+
+}
+
+/* footer words */
+
+.react-icon-footer {
+    font-size: 3rem;
+    color: var(--dark-bg-contrast);
+    margin-left: 1rem;
+}
+
+.React-text {
+    color: var(--dark-bg-contrast);
+    margin-right: 1rem;
+
+}
+
+.django-icon-footer {
+    font-size: 5.5rem;
+    color: #26AC79;
+    margin: 0 1rem;
+}
+
+.footer-link {
+    margin-left: 1rem;
+    color: var(--yellow);
+    text-decoration: none;
+}

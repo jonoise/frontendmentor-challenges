@@ -7,8 +7,8 @@
 
 .hero video {
     position: absolute;
-    width: 118%;
-    top: -12rem;
+    width: 117%;
+    top: -20rem;
     filter: brightness(30%);
 }
 
@@ -43,4 +43,62 @@
     font-size: 2.3rem;
     width: 75%;
     margin: 1rem 0
+}
+
+@media screen and (max-width: 1025px) {
+    .hero {
+        position: absolute;
+        min-height: 100vh;
+        top: 0rem;
+        left: 0;
+        overflow: hidden;
+    }
+
+    .hero video {
+        width: 275%;
+        top: -10rem;
+
+    }
+
+
+    .hero-left {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding-left: 3rem;
+        padding-bottom: 3rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .hero {
+        position: absolute;
+        min-height: 100vh;
+        left: 0;
+        overflow: hidden;
+    }
+
+    .hero video {
+        width: 450%;
+    }
+
+
+    .hero-left {
+        padding-left: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    .hero-left h1,
+    .hero-right h1 {
+        font-size: 3rem;
+        font-stretch: condensed;
+
+    }
+
+    .hero-left-text {
+        font-size: 1.4rem;
+        width: 90%;
+        margin: 1rem 0
+    }
 }

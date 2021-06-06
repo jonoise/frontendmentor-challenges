@@ -15,7 +15,7 @@ function Navbar() {
   };
 
   return (
-    <header className="navbar flex">
+    <header className={click ? "navbar bg-color flex" : "navbar flex"}>
       <div className="nav-container flex space-between">
         <Link to="/">
           <div className="logo-container">

@@ -21,7 +21,7 @@ function PostCardBody({ body, date }) {
           : `${body.slice(0, 150)}...`}
       </p>
       <p className="show-more" onClick={handleShowMore}>
-        {showMore ? "Show less" : "Show more"}
+        {showMore ? "Ver menos" : "Leer más"}
       </p>
       <small className="created-text">
         {showMore ? "" : `Fecha: ${created}`}

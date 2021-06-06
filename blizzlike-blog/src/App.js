@@ -4,6 +4,7 @@ import Blog from "./Components/Blog/Blog";
 import Home from "./Components/Home/Home";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Navbar from "./Components/Navbar/Navbar";
+import Footer from "./Components/Footer/Footer";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
               </div>
             </div>
           </Switch>
+          <Footer />
         </ScrollToTop>
       </BrowserRouter>
     </>
