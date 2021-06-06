@@ -1,0 +1,32 @@
+.postcard-text {
+    color: rgb(224, 224, 224);
+    font-size: 2rem;
+    padding: 2rem;
+}
+
+.show-more {
+    color: var(--yellow);
+    cursor: pointer;
+    width: 120px;
+}
+
+.show-more:hover {
+    color: var(--yellow-fade);
+}
+
+.created-text {
+    position: absolute;
+    bottom: 80px;
+}
+
+@media screen and (max-width: 1200px) {
+    .postcard-text {
+        padding: 1rem 0;
+    }
+
+    .created-text {
+        position: absolute;
+        bottom: 30px;
+    }
+
+}

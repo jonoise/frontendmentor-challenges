@@ -1,0 +1,9 @@
+.postcards {
+    display: flex;
+}
+
+@media screen and (max-width: 1025px) {
+    .postcards {
+        display: block;
+    }
+}

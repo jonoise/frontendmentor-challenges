@@ -10,6 +10,10 @@ function Navbar() {
     setClick(!click);
   };
 
+  const closeNav = () => {
+    setClick(false);
+  };
+
   return (
     <header className="navbar flex">
       <div className="nav-container flex space-between">
@@ -24,22 +28,22 @@ function Navbar() {
         </div>
 
         <ul className={click ? "nav-items active" : "nav-items"}>
-          <li className="nav-item">
+          <li onClick={closeNav} className="nav-item">
             <Link to="/" className="nav-link">
               Home
             </Link>
           </li>
-          <li className="nav-item">
+          <li onClick={closeNav} className="nav-item">
             <Link to="/forms" className="nav-link">
               Forms
             </Link>
           </li>
-          <li className="nav-item">
+          <li onClick={closeNav} className="nav-item">
             <Link to="/design" className="nav-link">
               Design
             </Link>
           </li>
-          <li className="nav-item">
+          <li onClick={closeNav} className="nav-item">
             <Link to="/know-me" className="nav-link">
               Know+
             </Link>

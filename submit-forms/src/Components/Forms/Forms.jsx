@@ -1,32 +1,66 @@
-import React from "react";
-import { useRouteMatch, Link } from "react-router-dom";
+import React, { useState } from "react";
+import FormEntry from "./FormEntry";
 import data from "./forms_data";
 import "./Forms.css";
 function Forms() {
-  let { url } = useRouteMatch();
+  const [formData, setFormData] = useState(data);
+
+  const filterData = (e) => {
+    let filterData = data.filter((form) => form.category === e.target.name);
+    if (filterData.length === 0) {
+      filterData = data;
+    }
+    setFormData(filterData);
+  };
+
+  const allData = (e) => {
+    setFormData(data);
+  };
+
   return (
     <>
-      <div className="forms__component flex column">
-        <ul>
-          {data.map((entry) => {
-            const { id, title, type, text, added, style, theme, colors } =
-              entry;
-            return (
-              <li>
-                <h1>{title}</h1>
-                <p>{text}</p>
-                <h3>added: {added}</h3>
-                <div className="moreinfo">
-                  <h5>style: {style}</h5>
-                  <h5>theme: {theme}</h5>
-                  <h5>colors: {colors}</h5>
-                  <h5>type: {type}</h5>
-                </div>
-                <Link to={`${url}/${id}`}>Ver</Link>
-              </li>
-            );
-          })}
-        </ul>
+      <div className="forms__component flex">
+        <div className="form-container">
+          <div className="forms__component-title">
+            <h2>FORMS</h2>
+            <h3>Filter by category</h3>
+            <div className="forms-filter">
+              <button
+                onClick={allData}
+                name="all"
+                className="filter-btn btn-outline"
+              >
+                All
+              </button>
+              <button
+                onClick={filterData}
+                name="contact"
+                className="filter-btn btn-outline"
+              >
+                Contact
+              </button>
+              <button
+                onClick={filterData}
+                name="register"
+                className="filter-btn btn-outline"
+              >
+                Register
+              </button>
+              <button
+                onClick={filterData}
+                name="login"
+                className="filter-btn btn-outline"
+              >
+                Login
+              </button>
+            </div>
+          </div>
+          <div className="entry-wrapper">
+            {formData.map((entry) => {
+              return <FormEntry form={entry} />;
+            })}
+          </div>
+        </div>
       </div>
     </>
   );

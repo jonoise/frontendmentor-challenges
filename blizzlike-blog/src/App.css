@@ -1,0 +1,116 @@
+/* OPEN SANS */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+
+:root {
+  --dark-bg: #121313;
+  --dark-bg-contrast: #76dffc;
+  --white: rgb(236, 236, 236);
+  --white-trans: rgba(236, 236, 236, 0.637);
+  --yellow: #f7b10a;
+  --yellow-fade: #ffc067;
+  --yellow-bg: #C77E19;
+  --red: #9F1600;
+  --red-hover: #9f150094;
+}
+
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+  font-family: 'Open Sans';
+}
+
+.main-background {
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.main-content {
+  padding-top: 10rem;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  background-color: var(--dark-bg);
+}
+
+.container {
+  width: 85%;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+Link {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+/* FLEX */
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.space-around {
+  justify-content: space-around;
+}
+
+/* BUTTONS */
+
+.btn {
+  margin: 0.5rem;
+  padding: 1rem 2.5rem;
+  font-size: 1.6rem;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.btn-primary {
+  border: 1px solid #C77E19;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #f7b10a
+}
+
+.btn-primary:hover {
+  background-color: #d68717;
+  color: #ffc067
+}
+
+.btn-secondary {
+  border: 1px solid #C77E19;
+  background-color: #9F1600;
+  color: #f7b10a
+}
+
+.btn-secondary:hover {
+  background-color: #9f150094;
+  color: #f7b10a
+}
+
+.btn-outline {
+  border: 1px solid #C77E19;
+  background-color: transparent;
+  color: #f7b10a
+}
+
+.btn-outline:hover {
+  background-color: #9f150094;
+  color: #f7b10a
+}
+
+@media screen and (max-width: 768px) {}

@@ -19,7 +19,7 @@ function F1Info() {
         </div>
         <div className="info-element">
           <p>
-            <span className="info-element-title">Intro: </span>
+            <span className="info-element-title">Description: </span>
             {desc}
           </p>
         </div>

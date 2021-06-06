@@ -1,0 +1,46 @@
+.hero {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.hero video {
+    position: absolute;
+    width: 118%;
+    top: -12rem;
+    filter: brightness(30%);
+}
+
+.hero-content {
+    color: var(--white);
+    width: 100%;
+    min-height: 80vh;
+    display: flex;
+    z-index: 1;
+}
+
+.hero-left {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.hero-left h2,
+.hero-right h2 {
+    color: var(--yellow)
+}
+
+.hero-left h1,
+.hero-right h1 {
+    font-size: 5rem;
+    font-stretch: condensed;
+
+}
+
+.hero-left-text {
+    font-size: 2.3rem;
+    width: 75%;
+    margin: 1rem 0
+}

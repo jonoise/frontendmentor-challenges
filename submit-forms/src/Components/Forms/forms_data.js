@@ -7,27 +7,30 @@ const forms_data = [{
         style: 'Minimal',
         theme: 'Light',
         colors: 'White/Blue',
+        category: 'contact'
     },
-    {
-        id: 2,
-        title: 'Basic Register Form',
-        type: 'Register',
-        desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti exercitationem molestiae obcaecati est? Itaque magnam dignissimos omnis nemo officiis beatae!',
-        added: 'Jun 3, 2021',
-        style: 'Modern',
-        theme: 'Dark',
-        colors: 'Dark/Gray'
-    },
-    {
-        id: 3,
-        title: 'Basic Login Form',
-        type: 'Login',
-        desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic expedita quaerat ducimus obcaecati excepturi pariatur iusto velit iure quae? Quia autem ducimus iste pariatur sunt.',
-        added: 'Jun 5, 2021',
-        style: 'Modern',
-        theme: 'Dark',
-        colors: 'Dark/Gray'
-    },
+    // {
+    //     id: 2,
+    //     title: 'Basic Register Form',
+    //     type: 'Register',
+    //     desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti exercitationem molestiae obcaecati est? Itaque magnam dignissimos omnis nemo officiis beatae!',
+    //     added: 'Jun 3, 2021',
+    //     style: 'Modern',
+    //     theme: 'Dark',
+    //     colors: 'Dark/Gray',
+    //     category: 'register'
+    // },
+    // {
+    //     id: 3,
+    //     title: 'Basic Login Form',
+    //     type: 'Login',
+    //     desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic expedita quaerat ducimus obcaecati excepturi pariatur iusto velit iure quae? Quia autem ducimus iste pariatur sunt.',
+    //     added: 'Jun 5, 2021',
+    //     style: 'Modern',
+    //     theme: 'Dark',
+    //     colors: 'Dark/Gray',
+    //     category: 'login'
+    // },
 
 ]
 
